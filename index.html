@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Task Earn - Earn with Facebook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .lottery-image {
+            width: 100px;
+            height: 100px;
+            margin: 0.5rem;
+            border-radius: 10px;
+        }
+        .lottery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+
+    <!-- Header Section -->
+    <header class="text-center py-20">
+        <h1 class="text-5xl font-bold mb-4">Task Earn</h1>
+        <h2 class="text-2xl mb-8">Earn with Facebook...</h2>
+        <p class="text-lg mb-12">Start earning by completing tasks and winning exciting rewards!</p>
+    </header>
+
+    <!-- Lottery Images Section -->
+    <section class="lottery-container mb-12">
+        <img src="images/image_search_1735230051120.png" alt="Lottery Image 1" class="lottery-image">
+        <img src="images/image_search_1735230055060.png" alt="Lottery Image 2" class="lottery-image">
+        <img src="images/image_search_1735230070812.jpg" alt="Lottery Image 3" class="lottery-image">
+        <img src="images/image_search_1735230061774.png" alt="Lottery Image 4" class="lottery-image">
+        <img src="images/image_search_1735230051120.png" alt="Lottery Image 5" class="lottery-image">
+        <img src="images/image_search_1735230055060.png" alt="Lottery Image 6" class="lottery-image">
+    </section>
+
+    <!-- Start Button Section -->
+    <section class="text-center">
+        <button onclick="startNow()" class="px-8 py-3 bg-yellow-500 text-xl text-black font-semibold rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300">Start Now</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-center py-10 mt-20">
+        <p class="text-sm">&copy; 2024 Task Earn - All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // JavaScript to handle the "Start Now" button click
+        function startNow() {
+            alert("Let's get started! Get ready to earn!");
+            // You can redirect to another page or open a modal as per your requirements.
+            window.location.href = "home.html"; // You can change the redirect URL
+        }
+    </script>
+
+</body>
+</html>
